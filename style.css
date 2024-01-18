@@ -1,0 +1,40 @@
+body{
+    background-color: black;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.calculator-container{
+
+}
+tr{
+    width: 300px;
+}
+td{
+    border: 1px solid black;
+    padding: 20px 30px;
+    background: #340334;
+    color: white;
+    border-radius: 10px;
+}
+.row-item{
+    transition:0.4s;
+    cursor: pointer;
+}
+.row-item:active{
+    background: #aa14aa;
+}
+.show-text{
+    color: white;
+    width: 300px;
+    height: 40px;
+    margin-bottom: 10px;
+    font-size: 40px;
+    text-align: right;
+}

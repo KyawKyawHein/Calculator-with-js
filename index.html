@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/feather-icons/feather.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator-container" id="calculatorContainer">
+            <div id="showText" class="show-text">0</div>
+            <table>
+                <tbody id="calBd">
+                    <tr class="rowCalculate">
+                        <td class="row-item" onclick="clearAll()">AC</td>
+                        <td class="row-item" onclick="delBtn()"><i class="feather-delete"></i></td>
+                        <td class="row-item" onclick="showSymbol('/')">/</td>
+                        <td class="row-item" onclick="showSymbol('*')">*</td>
+                    </tr>
+                    <tr class="rowCalculate">
+                        <td class="row-item" onclick="showText('7')">7</td>
+                        <td class="row-item" onclick="showText('8')">8</td>
+                        <td class="row-item" onclick="showText('9')">9</td>
+                        <td class="row-item" onclick="showSymbol('-')">-</td>
+                    </tr>
+                    <tr class="rowCalculate">
+                        <td class="row-item" onclick="showText('4')">4</td>
+                        <td class="row-item" onclick="showText('5')">5</td>
+                        <td class="row-item" onclick="showText('6')">6</td>
+                        <td class="row-item" onclick="showSymbol('+')">+</td>
+                    </tr>
+                    <tr class="rowCalculate">
+                        <td class="row-item" onclick="showText('1')">1</td>
+                        <td class="row-item" onclick="showText('2')">2</td>
+                        <td class="row-item" onclick="showText('3')">3</td>
+                        <td class="row-item" rowspan="2" onclick="calculate()">=</td>
+                    </tr>
+                    <tr class="rowCalculate">
+                        <td class="row-item" onclick="showSymbol('%')">%</td>
+                        <td class="row-item" onclick="showText('0')">0</td>
+                        <td class="row-item" onclick="showDot('.')">.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="assets/jquery/jquery.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
